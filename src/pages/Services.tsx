@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   return (
-    <div>
+    <div className="pt-20">
       <h1>Our Services</h1>
       <ul>
         <li><Link to="/services/power-systems">Power Systems</Link></li>

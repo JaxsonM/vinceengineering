@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
   const isServicesActive = location.pathname.startsWith('/services');
 
   return (
-    <nav className="bg-[#343a40] text-white p-4 flex justify-between items-center h-20 px-10 font-roboto relative z-50">
+    <nav className="bg-[#343a40] text-white p-4 flex justify-between items-center h-20 px-10 font-roboto fixed top-0 w-full z-50">
       {/* Company Name and Slogan */}
       <div className="text-center">
         <div className="text-[#A7EA53] text-sm">

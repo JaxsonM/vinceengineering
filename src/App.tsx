@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -34,6 +34,7 @@ const App: React.FC = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
