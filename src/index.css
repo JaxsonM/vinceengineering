@@ -2,12 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/Roboto.woff2) format('woff2');
-  }
-} */
+/* Styling for where there is text next to an image site wide */
+/* --------------------------------------------------- */
+.text-image-layout {
+  @apply flex flex-col md:flex-row bg-[#D8D8D8] w-full h-auto md:h-[calc(70vh-10rem)];
+}
+
+.text-container {
+  @apply w-full md:w-1/2 p-6 md:p-10 overflow-auto;
+}
+
+.text-title {
+  @apply text-3xl md:text-6xl;
+}
+
+.text-p {
+  @apply text-lg md:text-2xl;
+}
+
+.image-container {
+  @apply w-full md:w-1/2 bg-cover bg-center h-64 md:h-auto;
+}
+
+.dividing-line {
+  @apply border-b-4 border-[#1D6FC6] w-full my-4;
+}
+/* --------------------------------------------------- */

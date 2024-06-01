@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import React from 'react';
 import Slideshow from '../components/Slideshow';
 
@@ -9,19 +8,19 @@ const Home: React.FC = () => {
         <Slideshow />
       </div>
       <div className="text-center p-6">
-        <button className="mt-6 px-8 py-4 bg-[#1D6FC6] text-white text-2xl font-semibold rounded hover:bg-[#8FD041]">
+        <button className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-[#1D6FC6] text-white text-lg md:text-2xl font-semibold rounded hover:bg-[#8FD041] transition duration-300 ease-in-out">
           Contact Us
         </button>
       </div>
-      <div className="flex flex-col md:flex-row bg-[#D8D8D8] w-full h-auto md:h-[calc(70vh-10rem)]">
-        <div className="w-full md:w-1/2 p-6 md:p-10">
-          <h1 className="text-3xl md:text-6xl">What We Do</h1>
-          <div className="border-b-4 border-[#1D6FC6] w-full my-4"></div>
-          <p className="text-lg md:text-2xl">
+      <div className="text-image-layout">
+        <div className="text-container">
+          <h1 className="text-title">What We Do</h1>
+          <div className="dividing-line"></div>
+          <p className="text-p">
             At VinceEngineering, we specialize in delivering comprehensive electrical engineering solutions. Our expertise spans across power systems, control systems, network and communications, instrumentation, and data capture. With a strong background in service and support, we are committed to ensuring optimal performance and reliability for our clients. Located in Salt Lake City, UT, our team is dedicated to providing innovative solutions that drive efficiency and success in various industries.
           </p>
         </div>
-        <div className="w-full md:w-1/2 bg-cover bg-center h-64 md:h-auto" style={{ backgroundImage: "url('/images/Picture4.jpg')" }}></div>
+        <div className="image-container" style={{ backgroundImage: "url('/images/Picture4.jpg')" }}></div>
       </div>
     </div>
   );

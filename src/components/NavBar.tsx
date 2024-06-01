@@ -45,7 +45,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-[#343a40] text-white p-5 flex justify-between items-center shadow fixed top-0 w-full z-50">
+    <nav className="bg-[#343a40] text-white p-5 flex h-24 justify-between items-center shadow fixed top-0 w-full z-50">
       {/* Company Name and Slogan */}
       <div className="flex text-center justify-between items-center w-full md:w-auto">
         <div className="flex-col">
