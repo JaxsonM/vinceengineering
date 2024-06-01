@@ -16,6 +16,7 @@ import DataCapture from './pages/DataCapture';
 import Support from './pages/Support';
 import Projects from './pages/Projects';
 import ContactUs from './pages/ContactUs';
+import AllServices from './pages/AllServices';
 
 const App: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         <Route path="/services/instrumentation" element={<Instrumentation />} />
         <Route path="/services/data-capture" element={<DataCapture />} />
         <Route path="/services/support" element={<Support />} />
+        <Route path="/services/all" element={<AllServices />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>

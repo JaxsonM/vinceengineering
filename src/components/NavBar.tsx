@@ -49,14 +49,14 @@ const NavBar: React.FC = () => {
       {/* Company Name and Slogan */}
       <div className="flex text-center justify-between items-center w-full md:w-auto">
         <div className="flex-col">
-        <div className="text-[#A7EA53] text-xs md:text-sm">
-          POWER. CONTROLS. COMMUNICATIONS.
-        </div>
-        <div className="text-2xl md:text-3xl font-bold text-[#B4DCFA] mx-4">
-          <NavLink to="/" end>
-            VINC<span className="underline">EE</span>NGIN<span className="underline">EE</span>RING
-          </NavLink>
-        </div>
+          <div className="text-[#A7EA53] text-xs md:text-sm">
+            POWER. CONTROLS. COMMUNICATIONS.
+          </div>
+          <div className="text-2xl md:text-3xl font-bold text-[#B4DCFA] mx-4">
+            <NavLink to="/" end>
+              VINC<span className="underline">EE</span>NGIN<span className="underline">EE</span>RING
+            </NavLink>
+          </div>
         </div>
         <button onClick={toggleMobileMenu} className="text-3xl md:hidden focus:outline-none">
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
@@ -78,6 +78,11 @@ const NavBar: React.FC = () => {
             Services {isServicesDropdownOpen ? <FaCaretUp className="ml-1" /> : <FaCaretDown className="ml-1" />}
           </div>
           <ul ref={dropdownRef} className={`absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg transform transition-all duration-300 z-50 ${isServicesDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+            <li>
+              <NavLink to="/services/all" className="block px-4 py-2 hover:bg-gray-200" onClick={handleServiceClick}>
+                All Services
+              </NavLink>
+            </li>
             <li>
               <NavLink to="/services/power-systems" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-200"} onClick={handleServiceClick}>
                 Power Systems
