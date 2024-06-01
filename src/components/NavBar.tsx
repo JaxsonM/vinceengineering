@@ -104,7 +104,7 @@ const NavBar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services/support" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-400" : "block px-4 py-2 hover:bg-gray-400"} onClick={handleServiceClick}>
+              <NavLink to="/services/support" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-400"} onClick={handleServiceClick}>
                 Support
               </NavLink>
             </li>
