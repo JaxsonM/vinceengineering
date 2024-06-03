@@ -73,43 +73,43 @@ const NavBar: React.FC = () => {
         </li>
 
         {/* Services Dropdown */}
-        <li className="relative mx-4 my-6 md:my-0" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <div className={`hover:text-gray-300 focus:outline-none flex items-center ${isServicesActive || isServiceClicked ? 'text-[#A7EA53]' : ''}`} onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
+        <li className="relative mx-4 my-6 md:my-0 group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className={`focus:outline-none flex items-center ${isServicesActive || isServiceClicked ? 'text-[#A7EA53] hover:text-[#6B9635]' : 'hover:text-gray-300'}`} onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
             Services {isServicesDropdownOpen ? <FaCaretUp className="ml-1" /> : <FaCaretDown className="ml-1" />}
           </div>
-          <ul ref={dropdownRef} className={`absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg transform transition-all duration-300 z-50 ${isServicesDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+          <ul ref={dropdownRef} className={`absolute left-0 mt-2 max-w-56 bg-white text-black rounded-md shadow-lg transform transition-all duration-300 z-50 ${isServicesDropdownOpen ? 'max-h-128 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
             <li>
-              <NavLink to="/services/all" className="block px-4 py-2 hover:bg-gray-200" onClick={handleServiceClick}>
+              <NavLink to="/services/all" className={({ isActive }) => isActive ? "drop-down-item-active" : "drop-down-item"} onClick={handleServiceClick}>
                 All Services
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services/power-systems" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-200"} onClick={handleServiceClick}>
+              <NavLink to="/services/power-systems" className={({ isActive }) => isActive ? "drop-down-item-active" : "drop-down-item"} onClick={handleServiceClick}>
                 Power Systems
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services/control-systems" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-200"} onClick={handleServiceClick}>
+              <NavLink to="/services/control-systems" className={({ isActive }) => isActive ? "drop-down-item-active" : "drop-down-item"} onClick={handleServiceClick}>
                 Control Systems
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services/network-communications" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-200"} onClick={handleServiceClick}>
+              <NavLink to="/services/network-communications" className={({ isActive }) => isActive ? "drop-down-item-active" : "drop-down-item"} onClick={handleServiceClick}>
                 Network & Communications
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services/instrumentation" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-200"} onClick={handleServiceClick}>
+              <NavLink to="/services/instrumentation" className={({ isActive }) => isActive ? "drop-down-item-active" : "drop-down-item"} onClick={handleServiceClick}>
                 Instrumentation
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services/data-capture" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-200"} onClick={handleServiceClick}>
+              <NavLink to="/services/data-capture" className={({ isActive }) => isActive ? "drop-down-item-active" : "drop-down-item"} onClick={handleServiceClick}>
                 Data Capture
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services/support" className={({ isActive }) => isActive ? "block px-4 py-2 bg-gray-200" : "block px-4 py-2 hover:bg-gray-400"} onClick={handleServiceClick}>
+              <NavLink to="/services/support" className={({ isActive }) => isActive ? "drop-down-item-active" : "drop-down-item"} onClick={handleServiceClick}>
                 Support
               </NavLink>
             </li>

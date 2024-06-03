@@ -1,16 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slideshow from '../components/Slideshow';
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col items-center pt-20">
+    <div className="flex flex-col items-center pt-24">
+      <div className="flex items-center text-center p-4 text-4xl md:text-6xl font-bold mx-4">
+        <img src="/images/logoAnim.gif" alt="Logo Animation" className="w-16 h-16 md:w-24 md:h-24 ml-4" />
+        <h1 className="ml-2">
+          VINC<span className="underline">EE</span>NGIN<span className="underline">EE</span>RING
+        </h1>
+      </div>
       <div className="w-full bg-cover bg-center" style={{ backgroundImage: "url('/images/imageBackground.jpg')" }}>
         <Slideshow />
       </div>
       <div className="text-center p-6">
-        <button className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-[#1D6FC6] text-white text-lg md:text-2xl font-semibold rounded hover:bg-[#8FD041] transition duration-300 ease-in-out">
-          Contact Us
-        </button>
+        <Link to="/contact">
+          <button className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-[#1D6FC6] text-white text-lg md:text-2xl font-semibold rounded hover:bg-[#154e8b] transition duration-300 ease-in-out">
+            Contact Us
+          </button>
+        </Link>
       </div>
       <div className="text-image-layout">
         <div className="text-container">
