@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           VINC<span className="underline">EE</span>NGIN<span className="underline">EE</span>RING
         </h1>
       </div>
-      <div className="w-full bg-cover bg-center" style={{ backgroundImage: "url('/images/imageBackground.jpg')" }}>
+      <div className="w-full bg-cover bg-center h-[calc(70vh-10rem)]" style={{ backgroundImage: "url('/images/imageBackground.jpg')" }}>
         <Slideshow />
       </div>
       <div className="text-center p-6">

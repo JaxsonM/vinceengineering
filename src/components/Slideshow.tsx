@@ -14,21 +14,26 @@ const Slideshow: React.FC = () => {
     pauseOnHover: false,
   };
 
+  const slides = [
+    { src: "/images/Picture1.jpg", label: "Power Systems" },
+    { src: "/images/Picture2.jpg", label: "Control Systems" },
+    { src: "/images/Picture3.jpg", label: "Network & Communications" },
+    { src: "/images/Picture4.jpg", label: "Instrumentation" },
+    { src: "/images/Picture1.jpg", label: "Data Capture" },
+    { src: "/images/Picture2.jpg", label: "Support" },
+  ];
+
   return (
     <div className="w-full">
       <Slider {...settings}>
-        <div className="flex justify-center">
-          <img src="/images/Picture1.jpg" alt="Slide 1" className="w-full h-[calc(70vh-10rem)] object-contain" />
-        </div>
-        <div className="flex justify-center">
-          <img src="/images/Picture2.jpg" alt="Slide 2" className="w-full h-[calc(70vh-10rem)] object-contain" />
-        </div>
-        <div className="flex justify-center">
-          <img src="/images/Picture3.jpg" alt="Slide 3" className="w-full h-[calc(70vh-10rem)] object-contain" />
-        </div>
-        <div className="flex justify-center">
-          <img src="/images/Picture4.jpg" alt="Slide 4" className="w-full h-[calc(70vh-10rem)] object-contain" />
-        </div>
+        {slides.map((slide, index) => (
+          <div key={index} className="relative flex justify-center">
+            <img src={slide.src} alt={`Slide ${index + 1}`} className="w-full h-[calc(70vh-10rem)] object-contain" />
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-4 py-2">
+              {slide.label}
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );
