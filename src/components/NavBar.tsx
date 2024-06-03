@@ -49,10 +49,10 @@ const NavBar: React.FC = () => {
       {/* Company Name and Slogan */}
       <div className="flex text-center justify-between items-center w-full md:w-auto">
         <div className="flex-col">
-          <div className="text-[#A7EA53] text-xs md:text-sm">
+          <div className="text-[#A7EA53] text-xs md:text-xs">
             POWER. CONTROLS. COMMUNICATIONS.
           </div>
-          <div className="text-2xl md:text-3xl font-bold text-[#B4DCFA] mx-4">
+          <div className="text-1xl md:text-3xl font-bold text-[#B4DCFA] mx-4">
             <NavLink to="/" end>
               VINC<span className="underline">EE</span>NGIN<span className="underline">EE</span>RING
             </NavLink>
@@ -64,7 +64,7 @@ const NavBar: React.FC = () => {
       </div>
 
       {/* Navigation Links */}
-      <ul className={`md:flex md:text-2xl md:items-center md:space-x-10 md:relative absolute bg-[#343a40] w-full md:w-auto md:py-0 py-4 md:pl-0 pl-7 transition-all duration-500 ease-in ${isMobileMenuOpen ? 'top-20 opacity-100' : 'top-[-400px] opacity-0 md:opacity-100 md:top-0'}`}>
+      <ul className={`md:flex md:text-xl md:items-center md:space-x-10 md:relative absolute bg-[#343a40] w-full md:w-auto md:py-0 py-4 md:pl-0 pl-7 transition-all duration-500 ease-in ${isMobileMenuOpen ? 'top-20 opacity-100' : 'top-[-400px] opacity-0 md:opacity-100 md:top-0'}`}>
         <li className="mx-4 my-6 md:my-0">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-[#A7EA53] hover:text-[#6B9635]" : "hover:text-gray-300"} end onClick={() => setIsMobileMenuOpen(false)}>Home</NavLink>
         </li>

@@ -5,7 +5,7 @@ import Slideshow from '../components/Slideshow';
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col items-center pt-24">
-      <div className="flex items-center text-center p-4 text-2xl md:text-6xl font-bold mx-4">
+      <div className="flex items-center text-center p-4 text-2xl md:text-5xl font-bold mx-4">
         <img src="/images/logoAnim.gif" alt="Logo Animation" className="w-16 h-16 md:w-24 md:h-24 ml-4" />
         <h1 className="ml-2">
           VINC<span className="underline">EE</span>NGIN<span className="underline">EE</span>RING

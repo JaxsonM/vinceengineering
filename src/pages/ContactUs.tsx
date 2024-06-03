@@ -4,10 +4,10 @@ const ContactUs: React.FC = () => {
   return (
     <div className="flex flex-col items-center pt-24 px-4 md:px-20 mt-4">
       <div className="w-full text-center">
-        <h1 className="text-3xl md:text-6xl font-bold">Contact Us</h1>
+        <h1 className="page-title">Contact Us</h1>
         <div className="dividing-line"></div>
       </div>
-      <div className="flex flex-col md:flex-row bg-[#D8D8D8] w-full h-auto md:h-[calc(80vh-10rem)] my-10">
+      <div className="flex flex-col md:flex-row bg-[#D8D8D8] w-full h-auto my-10">
         <div className="w-full md:w-1/2 p-6 md:p-10 overflow-auto">
           <h2 className="text-3xl md:text-4xl font-semibold">Get in Touch</h2>
           <div className="dividing-line"></div>

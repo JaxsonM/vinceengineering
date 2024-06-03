@@ -4,7 +4,7 @@ const Projects: React.FC = () => {
   return (
     <div className="flex flex-col items-center pt-24 px-4 md:px-20 mt-4">
       <div className="w-full text-center">
-        <h1 className="text-3xl md:text-6xl font-bold">Our Projects</h1>
+        <h1 className="page-title">Our Projects</h1>
         <div className="dividing-line"></div>
       </div>
       <div className="text-image-layout my-10">
