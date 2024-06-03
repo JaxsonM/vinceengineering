@@ -44,7 +44,7 @@ const ControlSystems: React.FC = () => {
         </div>
         <div className="image-container" style={{ backgroundImage: "url('/images/controlSystem3.jpg')" }}></div>
       </div>
-      <div className="text-image-layout">
+      <div className="text-image-layout mb-10">
         <div className="image-container" style={{ backgroundImage: "url('/images/controlSystem4.jpg')" }}></div>
         <div className="text-container">
           <h2 className="text-title">New Machine Development</h2>

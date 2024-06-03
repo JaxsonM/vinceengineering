@@ -33,7 +33,7 @@ const PowerSystems: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="text-image-layout">
+      <div className="text-image-layout mb-10">
         <div className="text-container">
           <h2 className="text-title">Safety Isolation & Lockout Tagout</h2>
           <div className="dividing-line"></div>
@@ -44,6 +44,7 @@ const PowerSystems: React.FC = () => {
         <div className="image-container" style={{ backgroundImage: "url('/images/powerSystem3.jpg')" }}></div>
       </div>
       <div className="text-image-layout">
+      <div className="image-container" style={{ backgroundImage: "url('/images/powerSystem4.jpg')" }}></div> 
         <div className="text-container">
           <h2 className="text-title">Circuit Traceability</h2>
           <div className="dividing-line"></div>
@@ -51,7 +52,6 @@ const PowerSystems: React.FC = () => {
             Our circuit traceability services ensure that every component of your electrical system is accurately mapped and documented. This service is crucial for troubleshooting, maintenance, and future expansion of your power systems.
           </p>
         </div>
-        <div className="image-container" style={{ backgroundImage: "url('/images/powerSystem4.jpg')" }}></div>
       </div>
     </div>
   );

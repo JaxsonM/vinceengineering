@@ -45,7 +45,7 @@ const Instrumentation: React.FC = () => {
         </div>
         <div className="image-container" style={{ backgroundImage: "url('/images/instrumentation3.jpg')" }}></div>
       </div>
-      <div className="text-image-layout">
+      <div className="text-image-layout mb-10">
         <div className="image-container" style={{ backgroundImage: "url('/images/instrumentation4.jpg')" }}></div>
         <div className="text-container">
           <h2 className="text-title">Voltage, Current, and Power</h2>

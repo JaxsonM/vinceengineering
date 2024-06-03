@@ -7,7 +7,7 @@ const ContactUs: React.FC = () => {
         <h1 className="text-3xl md:text-6xl font-bold">Contact Us</h1>
         <div className="dividing-line"></div>
       </div>
-      <div className="flex flex-col md:flex-row bg-[#D8D8D8] w-full h-auto md:h-[calc(70vh-10rem)] my-10">
+      <div className="flex flex-col md:flex-row bg-[#D8D8D8] w-full h-auto md:h-[calc(80vh-10rem)] my-10">
         <div className="w-full md:w-1/2 p-6 md:p-10 overflow-auto">
           <h2 className="text-3xl md:text-4xl font-semibold">Get in Touch</h2>
           <div className="dividing-line"></div>
@@ -54,7 +54,7 @@ const ContactUs: React.FC = () => {
             <div>
               <button
                 type="submit"
-                className="w-full p-3 bg-[#1D6FC6] text-white text-lg md:text-2xl font-semibold rounded hover:bg-[#8FD041] transition duration-300 ease-in-out"
+                className="w-full p-3 bg-[#1D6FC6] text-white text-lg md:text-2xl font-semibold rounded hover:bg-[#154e8b] transition duration-300 ease-in-out"
               >
                 Send Message
               </button>

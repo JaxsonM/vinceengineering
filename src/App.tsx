@@ -17,10 +17,12 @@ import Support from './pages/Support';
 import Projects from './pages/Projects';
 import ContactUs from './pages/ContactUs';
 import AllServices from './pages/AllServices';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
