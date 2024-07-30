@@ -1,8 +1,25 @@
-import React from 'react';
+// src/pages/Home.tsx
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ContentContext } from '../context/ContentContext';
 import Slideshow from '../components/Slideshow';
+import ReactMarkdown from 'react-markdown';
 
 const Home: React.FC = () => {
+  const context = useContext(ContentContext);
+
+  if (!context) {
+    return <div>Loading...</div>; // or handle the undefined context case appropriately
+  }
+
+  const { content, loading } = context;
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  const homeContent = content.home || {};
+
   return (
     <div className="flex flex-col items-center pt-24">
       <div className="flex items-center text-center p-4 text-3xl md:text-5xl font-bold mx-4">
@@ -23,11 +40,11 @@ const Home: React.FC = () => {
       </div>
       <div className="text-image-layout">
         <div className="text-container">
-          <h1 className="text-title">What We Do</h1>
+          <h1 className="text-title">{homeContent.whatWeDoTitle}</h1>
           <div className="dividing-line"></div>
-          <p className="text-p">
-            At VinceEngineering, we specialize in delivering comprehensive electrical engineering solutions. Our expertise spans across power systems, control systems, network and communications, instrumentation, and data capture. With a strong background in service and support, we are committed to ensuring optimal performance and reliability for our clients. Located in Salt Lake City, UT, our team is dedicated to providing innovative solutions that drive efficiency and success in various industries.
-          </p>
+          <ReactMarkdown className="text-p">
+            {homeContent.whatWeDoTextBody}
+          </ReactMarkdown>
         </div>
         <div className="image-container" style={{ backgroundImage: "url('/images/Picture4.jpg')" }}></div>
       </div>
