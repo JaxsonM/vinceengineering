@@ -48,6 +48,7 @@ const NavBar: React.FC = () => {
     <nav className="bg-[#343a40] text-white p-5 flex h-24 justify-between items-center shadow fixed top-0 w-full z-50">
       {/* Company Name and Slogan */}
       <div className="flex text-center justify-between items-center w-full md:w-auto">
+      <img src="/images/veLogo.png" alt="Logo Animation" className="w-8 h-8 md:w-16 md:h-16 ml-4" />
         <div className="flex-col">
           <div className="text-[#A7EA53] text-xs md:text-xs">
             POWER. CONTROLS. COMMUNICATIONS.
